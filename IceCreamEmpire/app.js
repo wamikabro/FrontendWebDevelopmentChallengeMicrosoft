@@ -15,3 +15,6 @@ transactions.push({ scoops: ["Chocolate", "Vanilla", "Mint Chip"], total: 5.5 })
 transactions.push({ scoops: ["Raspberry", "StrawBerry"], total: 2 })
 transactions.push({ scoops: ["Vanilla", "Vanilla"], total: 4 })
 
+const total = transactions.reduce((acc, curr) => acc + curr.total, 0);
+console.log(`You've made ${total} $ today`); // You've made 11.5 $ today
+
